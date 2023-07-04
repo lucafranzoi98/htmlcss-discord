@@ -23,7 +23,7 @@
 }
 
 .container{
-    max-width: 1170px;
+    width: 1170px;
     margin: auto;
 }
 
@@ -221,7 +221,7 @@ footer{
     margin-bottom: 1rem;
 }
 
-footer img{
+.flag{
     height: 1rem;
 }
 
@@ -248,7 +248,7 @@ footer img{
 }
 
 .page-list{
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     margin-right: 3rem;
 }
 
@@ -269,5 +269,8 @@ footer img{
 .footer-end{
     align-items: center;
     justify-content: space-between;
+    border-top: 1px solid var(--d-color-text-footer);
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
 /* End Footer */
