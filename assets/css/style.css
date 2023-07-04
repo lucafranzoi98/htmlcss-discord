@@ -5,22 +5,6 @@
 }
 
 /* Start debug */
-.debug *{
-    border: 1px dashed black;
-}
-
-.debug header{
-    background-color: lightblue;
-}
-
-.debug header .container{
-    background-color: rgb(129, 182, 199);
-}
-
-.debug header .container div{
-    background-color: rgb(129, 209, 235);
-}
-
 .debug .jumbotron{
     background-color: lightblue;
 }
@@ -67,15 +51,23 @@
     background-color: rgb(227, 162, 41);
 }
 
-.debug .button{
+.debug .link{
     background-color: rgb(187, 130, 24);
     height: 50px;
 }
 /* End debug */
 
 /* Start utilities */
+:root{
+    --d-font: 'Open Sans', sans-serif;
+    --d-light: white;
+    --d-primary: #3160e1;
+    --d-secondary: #22272b;
+    --d-color-text-footer: #7388da;
+    --d-color-button: #8fa1e0;
+}
+
 .container{
-    width: 80%;
     max-width: 1170px;
     margin: auto;
 }
@@ -102,21 +94,40 @@
 /* End utilities */
 
 /* Start Header */
-header .container{
-    align-items: center;
-    padding: 1rem 0;
+header{
+    background-color: var(--d-primary);
 }
 
-.logo{
-    text-align: left;
+header .container{
+    align-items: center;
+    padding: 1.5rem 0;
+    font-family: var(--d-font);
+}
+
+.logo img{
+    width: 122px;
 }
 
 .menu{
     text-align: center;
 }
 
+.menu a{
+    text-decoration: none;
+    color: var(--d-light);
+    margin: 0 1.5rem;
+}
+
 .login{
     text-align: right;
+}
+
+.login a{
+    text-decoration: none;
+    color: var(--d-secondary);
+    background-color: var(--d-light);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
 }
 /* End Header */
 
@@ -152,7 +163,7 @@ main .container{
     justify-content: space-between;
 }
 
-.button{
+.link{
     margin: 1rem;
 }
 /* End Footer */
