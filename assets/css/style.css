@@ -5,32 +5,6 @@
 }
 
 /* Start debug */
-.debug .light-section{
-    background-color: lightgray;
-}
-
-.debug .dark-section{
-    background-color: rgb(160, 160, 160);
-}
-
-.debug main .container{
-    background-color: rgb(250, 205, 122);
-    margin: 2rem auto;
-}
-
-.debug .row{
-    background-color: rgb(248, 190, 83);
-}
-
-.debug .row>div{
-    background-color: rgb(227, 162, 41);
-}
-
-.debug .card{
-    background-color: rgb(187, 130, 24);
-    height: 300px;
-}
-
 .debug footer{
     background-color: rgb(55, 112, 131);
 }
@@ -54,8 +28,8 @@
     --d-text-size: 1rem;
     --d-title: 'gg sans', sans-serif;
     --d-title-size: 3rem;
-    --d-subtitle: 'gg sans semibold', sans-serif;
-    --d-subtitle-size: 2rem;
+    --d-subtitle: 'gg sans', sans-serif;
+    --d-subtitle-size: 3rem;
     --d-cta: 'gg sans medium', sans-serif;
     --d-cta-size: 1.1rem;
     --d-light: white;
@@ -92,7 +66,7 @@
 
 .button{
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
     border-radius: 2rem;
     font-family: var(--d-cta);
     font-size: var(--d-cta-size);
@@ -112,6 +86,23 @@
     background-color: var(--d-secondary);
     color: var(--d-light);
 }
+
+h1{
+    color: var(--d-light);
+    font-family: var(--d-title);
+    font-size: var(--d-title-size);
+    margin-bottom: 1.8rem;
+}
+
+h3{
+    font-family: var(--d-subtitle);
+    font-size: var(--d-subtitle-size);
+    color: var(--d-dark);
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+}
+
 /* End utilities */
 
 /* Start Header */
@@ -159,13 +150,6 @@ header .container{
     text-align: center;
 }
 
-h1{
-    color: var(--d-light);
-    font-family: var(--d-title);
-    font-size: var(--d-title-size);
-    margin-bottom: 1.8rem;
-}
-
 .intro p{
     color: var(--d-light);
     font-family: var(--d-text);
@@ -183,20 +167,36 @@ h1{
 /* End Jumbotron */
 
 /* Start Main */
-main .container{
-    margin: 2rem auto;
+.image-item{
+    width: 75%;
 }
 
-.row{
-    margin: 2rem auto;
+.dark-section .col-8 .card{
+    text-align: right;
+}
+.card p{
+    font-family: var(--d-text);
+    font-size: var(--d-text-size);
+    color: var(--d-dark);
 }
 
-.row>div{
-    margin: 2rem auto;
+.wave{
+    width: 100%;
+    display: flex;
 }
 
-.card{
-    margin: 1rem;
+.wave-reverse{
+    width: 100%;
+    display: flex;
+    transform: rotate(180deg);
+}
+
+.dark-section{
+    background-color: #f7f6f7;
+}
+
+.dark-section, .light-section{
+    padding: 3rem 0;
 }
 /* End Main */
 
