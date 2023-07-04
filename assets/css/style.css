@@ -4,24 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Start debug */
-.debug footer{
-    background-color: rgb(55, 112, 131);
-}
-
-.debug .footer-end{
-    background-color: rgb(248, 190, 83);
-}
-.debug .footer-row>div{
-    background-color: rgb(227, 162, 41);
-}
-
-.debug .link{
-    background-color: rgb(187, 130, 24);
-    height: 50px;
-}
-/* End debug */
-
 /* Start utilities */
 :root{
     --d-text: 'gg sans normal', sans-serif;
@@ -37,6 +19,7 @@
     --d-dark: #22272b;
     --d-secondary: #8fa1e0;
     --d-color-text-footer: #7388da;
+    --d-text-footer: 0.7rem;
 }
 
 .container{
@@ -66,10 +49,18 @@
 
 .button{
     text-decoration: none;
-    padding: .5rem 1rem;
+    padding: .7rem 1.2rem;
     border-radius: 2rem;
     font-family: var(--d-cta);
     font-size: var(--d-cta-size);
+}
+
+.button-s{
+    text-decoration: none;
+    padding: .2rem .7rem;
+    border-radius: 1rem;
+    font-family: var(--d-text);
+    font-size: var(--d-text-size);
 }
 
 .bt-light{
@@ -101,6 +92,11 @@ h3{
     line-height: 3rem;
     margin-bottom: 2rem;
     margin-top: 2.5rem;
+}
+
+.mid-text{
+    font-family: var(--d-subtitle);
+    font-size: 2rem;
 }
 /* End utilities */
 
@@ -202,9 +198,7 @@ main section:last-of-type{
     text-align: center;
 }
 
-h4{
-    font-family: var(--d-subtitle);
-    font-size: 2rem;
+.ready{
     color: var(--d-dark);
     padding: 1rem;
     margin: 2rem 0;
@@ -216,12 +210,64 @@ h4{
 /* End Main */
 
 /* Start Footer */
+footer{
+    background-color: var(--d-dark);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.caption{
+    color: var(--d-color-text-footer);
+    margin-bottom: 1rem;
+}
+
+footer img{
+    height: 1rem;
+}
+
+#subject{
+    border: none;
+    background-color: var(--d-dark);
+    color: var(--d-light);
+    font-family: var(--d-text);
+    font-size: var(--d-text-size);
+    vertical-align: bottom;
+}
+
+.social{
+    margin-top: 1rem;
+}
+
+.social a{
+    margin: 0 0.5rem;
+    color: var(--d-light);
+}
+
+.social a:first-child{
+    margin-left: 0;
+}
+
+.page-list{
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+}
+
+.footer-page{
+    text-decoration: none;
+    color: var(--d-color-text-footer);
+    font-family: var(--d-subtitle);
+    font-size: var(--d-text);
+}
+
+.footer-element{
+    text-decoration: none;
+    color: var(--d-light);
+    font-family: var(--d-text);
+    font-size: var(--d-text);
+}
+
 .footer-end{
     align-items: center;
     justify-content: space-between;
-}
-
-.link{
-    margin: 1rem;
 }
 /* End Footer */
