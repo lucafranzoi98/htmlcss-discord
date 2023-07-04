@@ -5,15 +5,6 @@
 }
 
 /* Start debug */
-.debug .jumbotron{
-    background-color: lightblue;
-}
-
-.debug .main-image{
-    background-color: rgb(113, 154, 168);
-    height: 300px;
-}
-
 .debug .light-section{
     background-color: lightgray;
 }
@@ -59,12 +50,19 @@
 
 /* Start utilities */
 :root{
-    --d-font: 'Open Sans', sans-serif;
+    --d-text: 'gg sans normal', sans-serif;
+    --d-text-size: 1rem;
+    --d-title: 'gg sans', sans-serif;
+    --d-title-size: 3rem;
+    --d-subtitle: 'gg sans semibold', sans-serif;
+    --d-subtitle-size: 2rem;
+    --d-cta: 'gg sans medium', sans-serif;
+    --d-cta-size: 1.1rem;
     --d-light: white;
     --d-primary: #3160e1;
-    --d-secondary: #22272b;
+    --d-dark: #22272b;
+    --d-secondary: #8fa1e0;
     --d-color-text-footer: #7388da;
-    --d-color-button: #8fa1e0;
 }
 
 .container{
@@ -91,6 +89,29 @@
 .col-8{
     width: calc(100% /12 * 8);
 }
+
+.button{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-family: var(--d-cta);
+    font-size: var(--d-cta-size);
+}
+
+.bt-light{
+    background-color: var(--d-light);
+    color: var(--d-dark);
+}
+
+.bt-dark{
+    background-color: var(--d-dark);
+    color: var(--d-light);
+}
+
+.bt-secondary{
+    background-color: var(--d-secondary);
+    color: var(--d-light);
+}
 /* End utilities */
 
 /* Start Header */
@@ -101,15 +122,15 @@ header{
 header .container{
     align-items: center;
     padding: 1.5rem 0;
-    font-family: var(--d-font);
 }
 
 .logo img{
-    width: 122px;
+    width: 7.6rem;
 }
 
 .menu{
     text-align: center;
+    font-family: var(--d-text);
 }
 
 .menu a{
@@ -121,21 +142,43 @@ header .container{
 .login{
     text-align: right;
 }
-
-.login a{
-    text-decoration: none;
-    color: var(--d-secondary);
-    background-color: var(--d-light);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-}
 /* End Header */
 
 
 /* Start Jumbotron */
-.main-image{
-    width: 50%;
-    margin: 2rem auto;
+.jumbotron{
+    background-image: url('/assets/img/jumbo.png');
+    background-size: cover;
+    padding-top: 6rem;
+    height: 500px;
+}
+
+.intro{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    color: var(--d-light);
+    font-family: var(--d-title);
+    font-size: var(--d-title-size);
+    margin-bottom: 1.8rem;
+}
+
+.intro p{
+    color: var(--d-light);
+    font-family: var(--d-text);
+    font-size: var(--d-text-size);
+    line-height: 1.8rem;
+}
+
+.jumbotron-button{
+    margin-top: 2rem;
+}
+
+.jumbotron-button a{
+    margin: 0 1rem;
 }
 /* End Jumbotron */
 
